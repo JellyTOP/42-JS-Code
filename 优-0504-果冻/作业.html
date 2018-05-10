@@ -40,15 +40,18 @@
 <script type="text/javascript">
     var oBox = document.getElementById('box');
     var oMsg = document.getElementById('msg');
-    var oOut = document.getElementById('msg');
     oBox.onmouseenter = function(){
         oMsg.className = 'msg_in';
     }
-    // oBox.onmouseleave = function(){
-    //     oMsg.className = 'msg_out';
-    // }
-    oOut.onmouseleave = function(){
+    oBox.onmouseleave = function(){
         oMsg.className = 'msg_out';
     }
+    oMsg.onmouseenter = function(){
+        oMsg.className = 'msg_in';
+    }
+    oMsg.onmouseleave = function(){
+        oMsg.className = 'msg_out';
+    }
+
 </script>
 </html>
